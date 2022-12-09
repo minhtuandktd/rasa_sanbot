@@ -1,0 +1,122 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - rule: Say 'I am a bot' anytime the user challenges
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - rule: Ask the user to rephrase in case of low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+
+  - rule: ho rule
+    steps:
+      - intent: toi_bi_ho
+      - action: utter_toi_bi_ho
+
+  - rule: toi_bi_đau_tuc_nguc rule
+    steps:
+      - intent: toi_bi_đau_tuc_nguc
+      - action: utter_toi_bi_dau_tuc_nguc
+
+  - rule: toi_bi_dau_mat rule
+    steps:
+      - intent: toi_bi_dau_mat
+      - action: utter_toi_bi_dau_mat
+
+  - rule: toi_bi_ngua rule
+    steps:
+      - intent: toi_bi_ngua
+      - action: utter_toi_bi_ngua
+
+  - rule: toi_bi_dau_dau rule
+    steps:
+      - intent: toi_bi_dau_dau
+      - action: utter_toi_bi_dau_dau
+
+  - rule: toi_muon_noi_soi_da_day rule
+    steps:
+      - intent: toi_muon_noi_soi_da_day
+      - action: utter_toi_muon_noi_soi_da_day
+
+  - rule: toi_bi_di_ngoai rule
+    steps:
+      - intent: toi_bi_di_ngoai
+      - action: utter_toi_bi_di_ngoai
+
+  - rule: toi_bi_dau_xuong_khop rule
+    steps:
+      - intent: toi_bi_dau_xuong_khop
+      - action: utter_toi_bi_dau_xuong_khop
+
+  - rule: toi_di_kham_thai rule
+    steps:
+      - intent: toi_di_kham_thai
+      - action: utter_toi_di_kham_thai
+
+  - rule: toi_bi_dau_tai rule
+    steps:
+      - intent: toi_bi_dau_tai
+      - action: utter_toi_bi_dau_tai
+
+  - rule: toi_bi_dau_hong rule
+    steps:
+      - intent: toi_bi_dau_hong
+      - action: utter_toi_bi_dau_hong
+
+  - rule: toi_bi_ngat_mui rule
+    steps:
+      - intent: toi_bi_ngat_mui
+      - action: utter_toi_bi_ngat_mui
+
+  - rule: toi_bi_dau_rang rule
+    steps:
+      - intent: toi_bi_dau_rang
+      - action: utter_toi_bi_dau_rang
+
+  - rule: kiem_tra_suc_khoe_dinh_ky rule
+    steps:
+      - intent: kiem_tra_suc_khoe_dinh_ky
+      - action: utter_kiem_tra_suc_khoe_dinh_ky
+
+  - rule: con_toi_bi_sot rule
+    steps:
+      - intent: con_toi_bi_sot
+      - action: utter_con_toi_bi_sot
+
+  - rule: toi_bi_tieu_nhieu_vao_ban_dem rule
+    steps:
+      - intent: toi_bi_tieu_nhieu_vao_ban_dem
+      - action: utter_toi_bi_tieu_nhieu_vao_ban_dem
+
+  - rule: toi_bi_nga_xe rule
+    steps:
+      - intent: toi_bi_nga_xe
+      - action: utter_toi_bi_nga_xe
+
+  - rule: toi_bi_dau_bung rule
+    steps:
+      - intent: toi_bi_dau_bung
+      - action: utter_toi_bi_dau_bung
+
+  - rule: cac_tran_dau_gan_nhat rule
+    steps:
+      - intent: cac_tran_dau_gan_nhat
+      - action: action_get_recent_matches
+
+  - rule: Nha_thuoc_benh_vien_o_dau? rule
+    steps:
+      - intent: Nha_thuoc_benh_vien_o_dau?
+      - action: utter_Nha_thuoc_benh_vien_o_dau?
+
+  - rule: Cay_ATM_o_dau? rule
+    steps:
+      - intent: Cay_ATM_o_dau?
+      - action: utter_Cay_ATM_o_dau?

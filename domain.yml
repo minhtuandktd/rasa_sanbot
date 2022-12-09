@@ -1,0 +1,121 @@
+version: "3.1"
+
+intents:
+  - helloworld
+  - greet
+  - goodbye
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - toi_bi_ho
+  - toi_bi_đau_tuc_nguc
+  - toi_bi_dau_mat
+  - toi_bi_ngua
+  - toi_bi_dau_dau
+  - toi_muon_noi_soi_da_day
+  - toi_bi_di_ngoai
+  - toi_bi_dau_xuong_khop
+  - toi_di_kham_thai
+  - toi_bi_dau_tai
+  - toi_bi_dau_hong
+  - toi_bi_ngat_mui
+  - toi_bi_dau_rang
+  - kiem_tra_suc_khoe_dinh_ky
+  - con_toi_bi_sot
+  - toi_bi_tieu_nhieu_vao_ban_dem
+  - toi_bi_nga_xe
+  - toi_bi_dau_bung
+  - cac_tran_dau_gan_nhat
+  - Nha_thuoc_benh_vien_o_dau?
+  - Cay_ATM_o_dau?
+
+responses:
+  utter_greet:
+    - text: "Chào! Bạn khỏe không?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Bạn có cần giúp gì không?"
+
+  utter_happy:
+    - text: "Tuyệt vời"
+
+  utter_goodbye:
+    - text: "Tạm biệt"
+
+  utter_iamabot:
+    - text: "Tôi là bot, của Rasa"
+
+  utter_toi_bi_ho:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám hô hấp (tầng 4 nhà I)"
+
+  utter_toi_bi_dau_tuc_nguc:
+    - text: "Mời Bạn đăng kí khám tim mạch tại Trung tâm tim mạch (tầng 1 nhà H)"
+
+  utter_toi_bi_dau_mat:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám mắt (phòng 102 tầng 1 nhà C)"
+
+  utter_toi_bi_ngua:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám nội tổng hợp (tầng 2 nhà D)"
+
+  utter_toi_bi_dau_dau:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám thần kinh (phòng 301 tầng 3 nhà D)"
+
+  utter_toi_muon_noi_soi_da_day:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám nội soi (phòng 118 tầng 1 nhà C)"
+
+  utter_toi_bi_di_ngoai:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám tiêu hóa (tầng 3 nhà C)"
+
+  utter_toi_bi_dau_xuong_khop:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám lên phòng khám Cơ xương khớp"
+
+  utter_toi_di_kham_thai:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám sản (tầng 2 nhà B) "
+
+  utter_toi_bi_dau_tai:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám tai mũi họng (phòng 302 tầng 3 nhà F) (phòng 302 tầng 3 nhà F)"
+
+  utter_toi_bi_dau_hong:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám tai mũi họng (phòng 302 tầng 3 nhà F) (phòng 302 tầng 3 nhà F)"
+
+  utter_toi_bi_ngat_mui:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám tai mũi họng (phòng 302 tầng 3 nhà F) (phòng 302 tầng 3 nhà F)"
+
+  utter_toi_bi_dau_rang:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám răng hàm mặt (phòng 204 tầng 2 nhà F)"
+
+  utter_kiem_tra_suc_khoe_dinh_ky:
+    - text: "Mời Bạn làm thủ tục Kiểm tra sức khỏe tại phòng 306 tầng 3 nhà F"
+
+  utter_con_toi_bi_sot:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám lên phòng khám nhi (phòng F.106 tầng 1 nhà F)"
+
+  utter_toi_bi_tieu_nhieu_vao_ban_dem:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám thận tiết niệu (tầng 4 nhà C)"
+
+  utter_toi_bi_nga_xe:
+    - text: "Mời Bạn ra cửa F.102 để mua phiếu khám Ngoại tại phòng cấp cứu (tầng 1 nhà F)"
+
+  utter_toi_bi_dau_bung:
+    - text: "Mời Bạn ra cửa ... để mua phiếu khám lên phòng khám ... (phòng ... tầng ... nhà ...)"
+
+  utter_please_rephrase:
+    - text: "Tôi xin lỗi, tôi không hiểu ý bạn. Bạn có thể nói lại?"
+
+  utter_Nha_thuoc_benh_vien_o_dau?:
+    - text: "Nhà thuốc 1: Từ tòa nhà F, Bạn đi thẳng khoảng 300m sẽ đến nhà thuốc (1) Nhà thuốc 2: Từ tòa nhà F Bạn đi thẳng đến nhà thuốc (1), rẽ phải. Đi qua nhà B và nhà C đến nhà D. Nhà thuốc (2) đối diện nhà D."
+
+  utter_Cay_ATM_o_dau?:
+    - text: "Từ bàn hướng dẫn nhà F, Bạn đi thằng khoảng 300m sẽ thấy nhà thuốc. Cây ATM ở bên cạnh nhà thuốc."
+
+actions:
+  - action_hello_world
+  - action_get_recent_matches
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,308 @@
+version: "3.1"
+
+nlu:
+  - intent: helloworld
+    examples: |
+      - chào thế giới
+      - thế giới
+
+  - intent: greet
+    examples: |
+      - xin chào
+      - cho tôi hỏi
+
+  - intent: goodbye
+    examples: |
+      - tạm biệt
+      - chào bạn
+
+  - intent: mood_great
+    examples: |
+      - tuyệt vời
+      - rất tốt
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+
+  - intent: bot_challenge
+    examples: |
+      - bạn là bot?
+      - bạn có phải người không?
+
+  - intent: toi_bi_ho
+    examples: |
+      - Tôi bị hen suyễn
+      - Tôi bị viêm phế quản
+      - Tôi bị ho dai dẵng
+      - Tôi bị ho khan
+      - Tôi bị ho gió
+      - Tôi bị ho do hút thuốc
+      - Tôi ho có đờm
+      - Tôi bị ho ra máu
+      - Anh bị ho mãn tính
+      - Tôi ho thành cơn
+      - Tôi bị ho do viêm họng
+      - Mình bị ho gà
+      - Tôi bị khó thở
+      - Bị khó thở khám ở đâu
+      - Khó thở là bệnh gì
+
+  - intent: toi_bi_đau_tuc_nguc
+    examples: |
+      - Chị bị rối loạn nhịp tim
+      - Tôi hay bị ngất xỉu
+      - Đau tim đi khám ở đâu
+      - Tôi muốn khám tim mạch
+      - Tôi bị đau thắt ngực
+      - Tôi bị tăng huyết áp
+      - Tôi bị hở van tim
+      - Tôi bị đau lồng ngực
+
+  - intent: toi_bi_dau_mat
+    examples: |
+      - Tôi bị mỏi mắt
+      - Tôi muốn khám mắt
+      - Anh bị khô, rát mắt
+      - Tôi bị đau mắt đỏ
+      - Khám mắt bị cận ở đâu
+      - Tôi bị viêm giác mạc
+      - Anh bị nổi bọng nước trong mắt
+      - Tôi khám mắt lên lẹo
+      - Tôi bị viêm kết mạc
+      - Mắt tôi bị sưng
+
+  - intent: toi_bi_ngua
+    examples: |
+      - Tôi bị đau rát da
+      - Tôi bị nổi nốt trên da
+      - Tôi bị dị ứng
+      - Tôi bị viêm da
+      - Dị ứng thì khám ở đâu?
+      - Tôi bị tróc da tay
+      - Dị ứng mẩn ngứa khám chỗ nào
+      - Tôi bị dị ứng thời tiết
+      - Tôi muốn khám bệnh á sừng tổ đỉa
+      - Tôi bị viêm da cơ địa
+      - Tôi bị da khô và nứt nẻ
+      - Tôi bị nổi mề đay
+      - Bị mủ nước trên da khám ở đâu
+      - Tôi bị đau đầu dữ dội
+      - Anh hay bị chóng mặt
+      - Chị hay bị chóng mặt
+      - Tôi bị đau nửa đầu
+      - Tôi hay bị đau hai bên thái dương
+      - Tôi bị đau đầu hàng ngày
+      - Tôi bị đau đầu chóng mặt
+      - Rối loạn tuần hoàn não khám ở đâu
+      - Tôi bị rối loạn tiền đình
+      - Đau đầu do căng thẳng khám ở đâu
+      - Tôi bị nhức đầu
+      - Tôi muốn nội soi
+      - Nội soi dạ dày ở đâu
+
+  - intent: toi_bi_dau_dau
+    examples: |
+      - Tôi bị đau đầu dữ dội
+      - Anh hay bị chóng mặt
+      - Chị hay bị chóng mặt
+      - Tôi bị đau nửa đầu
+      - Tôi hay bị đau hai bên thái dương
+      - Tôi bị đau đầu hàng ngày
+      - Tôi bị đau đầu chóng mặt
+      - Rối loạn tuần hoàn não khám ở đâu
+      - Tôi bị rối loạn tiền đình
+      - Đau đầu do căng thẳng khám ở đâu
+      - Tôi bị nhức đầu
+
+  - intent: toi_muon_noi_soi_da_day
+    examples: |
+      - Tôi muốn nội soi dạ dày
+      - Nội soi dạ dày ở đâu
+
+  - intent: toi_bi_di_ngoai
+    examples: |
+      - Tôi bị đầy hơi khó tiêu
+      - Tôi bị ợ chua
+      - Bị tiêu chảy khám ở đâu
+      - Khám rối loạn tiêu hóa
+      - Tôi bị ngộ độc thực phẩm
+      - Đi ngoài nhiều lần trong ngày khám ở đâu
+      - Tôi bị đau dạ dày
+      - Tôi bị đau thượng vị
+      - Khám đau dạ dày ở đâu
+      - Tôi bị loét dạ dày
+      - Tôi đau vùng giữa bụng
+      - Tôi bị xuất huyết dạ dày
+      - Tôi bị đau bao tử
+
+  - intent: toi_bi_dau_xuong_khop
+    examples: |
+      - Tôi bị đau cơ
+      - Tôi muốn kiểm tra xương
+      - Tôi bị đau đầu gối
+      - Tôi bị đau chân, nó sưng nó tấy
+      - Tôi bị căng cơ
+      - Thoái hóa khớp khám ở đâu
+      - Tôi muốn khám bệnh gout
+      - Tôi muốn khám đau nhức toàn thân
+      - Khám loãng xương
+      - Bác bị đau khớp
+      - Tôi bị cứng khớp
+      - Bác bị đau khớp gối
+      - Tôi bị chẹo tay
+      - Tôi bị đau các khớp
+      - Khám viêm đa khớp ở đâu
+      - Tôi bị đau khớp háng
+      - Tôi bị sưng các đốt ngón tay
+      - Tôi bị đau xương khớp
+      - Tôi bị thoát vị đĩa đệm
+      - Khám xương hông ở đâu
+      - Tôi bị đau vai gáy
+      - Bác bị đau gót chân
+      - Tôi bị đau tay
+      - Tôi bị đau chân
+      - Anh khám cơ đùi
+      - Khám thai định kỳ
+      - Tôi muốn cho ra thai
+      - Tôi muốn phá thai
+      - Tôi muốn siêu âm thai
+      - Khám thai ở đâu
+      - Nạo thai ở đâu
+
+  - intent: toi_di_kham_thai
+    examples: |
+      - Khám thai định kỳ
+      - Tôi muốn cho ra thai
+      - Tôi muốn phá thai
+      - Tôi muốn siêu âm thai
+      - Khám thai ở đâu
+      - Nạo thai ở đâu
+
+  - intent: toi_bi_dau_tai
+    examples: |
+      - Tôi bị ù tai
+      - Tôi bị đau nhức tai
+      - Khám viêm tai giữa ở đâu
+      - Tai tôi bị chảy máu
+      - Tôi bị đau lỗ tai
+      - Tai bị chảy mủ
+
+  - intent: toi_bi_dau_hong
+    examples: |
+      - Tôi bị viêm họng
+      - Tôi bị khàn giọng
+      - Tôi bị mất tiếng
+      - Tôi bị viêm họng mãn tính
+      - Cổ họng có đờm khám ở đâu
+      - Khám đau thanh quản ở đâu
+      - Tôi bị đau rát cổ họng
+
+  - intent: toi_bi_ngat_mui
+    examples: |
+      - Tôi muốn khám nghẹt mũi
+      - Tôi bị ngạt mũi khó thở
+      - Tôi bị viêm mũi dị ứng
+      - Khám lại xoang mũi ở đâu
+      - Tôi hay bị ngạt mũi về đêm
+      - Tôi bị viêm xoang
+      - Tôi bị đau mũi
+
+  - intent: toi_bi_dau_rang
+    examples: |
+      - Tôi bị chảy máu răng
+      - Tôi muốn nhổ răng
+      - Tôi bị sưng lợi khám ở đâu
+      - Tôi bị sâu răng
+      - Tôi muốn lấy tủy răng
+      - Tôi muốn lắp răng giả
+      - Khám viêm lợi ở đâu
+
+  - intent: kiem_tra_suc_khoe_dinh_ky
+    examples: |
+      - Kiểm tra sức khỏe tổng quát
+      - Tôi khám tổng thể
+      - Kiểm tra sức khỏe ở đâu
+
+  - intent: con_toi_bi_sot
+    examples: |
+      - Cháu nhà tôi bị ốm
+      - Sốt virut khám ở đâu
+      - Trẻ con bị sốt xuất huyết
+      - Bé nhà tôi bị cảm cúm
+      - Con tôi bị vàng da 
+      - Con tôi nấc nhiều ngày
+
+  - intent: toi_bi_tieu_nhieu_vao_ban_dem
+    examples: |
+      - Khám đi tiểu nhiều ở đâu
+      - Tôi muốn chữa bệnh tiểu đêm
+      - Khoa tiết niệu ở đâu
+      - Tôi muốn khám đi đái nhiều về đêm
+
+  - intent: toi_bi_nga_xe
+    examples: |
+      - Tôi bị chấn thương ngoài
+      - Tôi muốn chụp chiếu người do ngã xe
+      - Tôi muốn rửa vết thương
+      - Tôi muốn băng bó tay
+      - Toi bị người ta đánh
+
+  - intent: toi_bi_dau_bung
+    examples: |
+      - Tôi bị đau bụng kinh
+      - Khám ngộ độc thức ăn ở đâu
+      - Tôi bị táo bón
+      - Đau bụng bên phải nhiều khám ở đâu
+      - Tôi bị đau bụng vùng chính giữa
+      - Tôi bị đau bụng ở dưới
+      - Tôi bị đau bụng quặn từng cơn
+      - Tôi đau bụng bên trái
+      - Tôi bị ruột thừa
+      - Khám sỏi thận ở đâu
+      - Tôi muốn khám bệnh sỏi mật
+      - Tôi muốn đi tán sỏi
+      - Khám sỏi bàng quang ở đâu
+      - Tôi muốn điều trị sỏi thận
+      - Khám viêm đại tràng cấp
+      - Khám viêm đại tràng mãn tính
+      - Tôi bị viêm đại tràng co thắt
+      - Tôi muốn khám bệnh viêm đại tràng
+      - Tôi bị đau đại tràng
+
+  - intent: cac_tran_dau_gan_nhat
+    examples: |
+      - Các trận đấu gần nhất
+      - Trận đấu gần nhất
+
+  - intent: Nha_thuoc_benh_vien_o_dau?
+    examples: |
+      - Nơi mua thuốc
+      - Mua thuốc ở đâu?
+      - Bán thuốc ở đâu?
+      - Nơi bán thuốc
+      - Tôi muốn tìm nhà thuốc trong bệnh viện
+      - Bệnh viện có nhà thuốc không
+      - Nhà thuốc bệnh viện chỗ nào
+      - Chỉ cho tôi chỗ mua thuốc
+      - Mua thuốc đi đường nào
+
+  - intent: Cay_ATM_o_dau?
+    examples: |
+      - Tôi muốn tìm cây ATM
+      - Cây rút tiền đi đường nào
+      - Gần bệnh viện có cây rút tiền không
+      - Tôi muốn đi rút tiền
