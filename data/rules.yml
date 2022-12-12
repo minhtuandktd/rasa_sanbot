@@ -1,20 +1,30 @@
 version: "3.1"
 
 rules:
-  - rule: Say goodbye anytime the user says goodbye
+  - rule: chao_hoi rule
     steps:
-      - intent: goodbye
-      - action: utter_goodbye
+      - intent: chao_hoi
+      - action: utter_chao_hoi
 
-  - rule: Say 'I am a bot' anytime the user challenges
+  - rule: tam_biet rule
     steps:
-      - intent: bot_challenge
-      - action: utter_iamabot
+      - intent: tam_biet
+      - action: utter_tam_biet
 
-  - rule: Ask the user to rephrase in case of low NLU confidence
+  - rule: hoi_ten_robot rule
     steps:
-      - intent: nlu_fallback
-      - action: utter_please_rephrase
+      - intent: hoi_ten_robot
+      - action: utter_hoi_ten_robot
+
+  - rule: hoi_tuoi_robot rule
+    steps:
+      - intent: hoi_tuoi_robot
+      - action: utter_hoi_tuoi_robot
+
+  - rule: lam_duoc_nhung_gi rule
+    steps:
+      - intent: lam_duoc_nhung_gi
+      - action: utter_lam_duoc_nhung_gi
 
   - rule: ho rule
     steps:
@@ -106,10 +116,40 @@ rules:
       - intent: toi_bi_dau_bung
       - action: utter_toi_bi_dau_bung
 
-  - rule: cac_tran_dau_gan_nhat rule
+  # - rule: cac_tran_dau_gan_nhat rule
+  #   steps:
+  #     - intent: cac_tran_dau_gan_nhat
+  #     - action: action_get_recent_matches
+
+  - rule: Nha_I rule
     steps:
-      - intent: cac_tran_dau_gan_nhat
-      - action: action_get_recent_matches
+      - intent: Nha_I
+      - action: utter_Nha_I
+
+  - rule: Nha_H rule
+    steps:
+      - intent: Nha_H
+      - action: utter_Nha_H
+
+  - rule: Nha_P rule
+    steps:
+      - intent: Nha_P
+      - action: utter_Nha_P
+
+  - rule: Nha_B rule
+    steps:
+      - intent: Nha_B
+      - action: utter_Nha_B
+
+  - rule: Nha_C rule
+    steps:
+      - intent: Nha_C
+      - action: utter_Nha_C
+
+  - rule: Nha_D rule
+    steps:
+      - intent: Nha_D
+      - action: utter_Nha_D
 
   - rule: Nha_thuoc_benh_vien_o_dau? rule
     steps:
@@ -120,3 +160,306 @@ rules:
     steps:
       - intent: Cay_ATM_o_dau?
       - action: utter_Cay_ATM_o_dau?
+
+  - rule: Nha_an_benh_vien_o_dau? rule
+    steps:
+      - intent: Nha_an_benh_vien_o_dau?
+      - action: utter_Nha_an_benh_vien_o_dau?
+
+  - rule: Quan_ca_phe_o_dau? rule
+    steps:
+      - intent: Quan_ca_phe_o_dau?
+      - action: utter_Quan_ca_phe_o_dau?
+
+  - rule: Nha_luu_tru_benh_vien_o_dau? rule
+    steps:
+      - intent: Nha_luu_tru_benh_vien_o_dau?
+      - action: utter_Nha_luu_tru_benh_vien_o_dau?
+
+  - rule: Nha_tang_le_benh_vien_E_o_dau? rule
+    steps:
+      - intent: Nha_tang_le_benh_vien_E_o_dau?
+      - action: utter_Nha_tang_le_benh_vien_E_o_dau?
+  - rule: Nha_ve_sinh__o_dau? rule
+    steps:
+      - intent: Nha_ve_sinh__o_dau?
+      - action: utter_Nha_ve_sinh__o_dau?
+  - rule: Sieu_thi_o_dau? rule
+    steps:
+      - intent: Sieu_thi_o_dau?
+      - action: utter_Sieu_thi_o_dau?
+  - rule: Khoa_ho_hap_o_dau? rule
+    steps:
+      - intent: Khoa_ho_hap_o_dau?
+      - action: utter_Khoa_ho_hap_o_dau?
+  - rule: Khoa_mat_o_dau? rule
+    steps:
+      - intent: Khoa_mat_o_dau?
+      - action: utter_Khoa_mat_o_dau?
+  - rule: Khoa_noi_tong_hop_o_dau? rule
+    steps:
+      - intent: Khoa_noi_tong_hop_o_dau?
+      - action: utter_Khoa_noi_tong_hop_o_dau?
+  - rule: Khoa_noi_than_kinh_o_dau? rule
+    steps:
+      - intent: Khoa_noi_than_kinh_o_dau?
+      - action: utter_Khoa_noi_than_kinh_o_dau?
+  - rule: Khoa_tham_do_chuc_nang_-_noi_soi_o_dau? rule
+    steps:
+      - intent: Khoa_tham_do_chuc_nang_-_noi_soi_o_dau?
+      - action: utter_Khoa_tham_do_chuc_nang_-_noi_soi_o_dau?
+  - rule: Khoa_tim_mach_o_dau? rule
+    steps:
+      - intent: Khoa_tim_mach_o_dau?
+      - action: utter_Khoa_tim_mach_o_dau?
+  - rule: Khoa_tieu_hoa_o_dau? rule
+    steps:
+      - intent: Khoa_tieu_hoa_o_dau?
+      - action: utter_Khoa_tieu_hoa_o_dau?
+  - rule: Khoa_than_tiet_nieu_va_loc_mau_o_dau? rule
+    steps:
+      - intent: Khoa_than_tiet_nieu_va_loc_mau_o_dau?
+      - action: utter_Khoa_than_tiet_nieu_va_loc_mau_o_dau?
+  - rule: Khoa_Co_xuong_khop_o_dau? rule
+    steps:
+      - intent: Khoa_Co_xuong_khop_o_dau?
+      - action: utter_Khoa_Co_xuong_khop_o_dau?
+  - rule: Kham_Co_xuong_khop_thuong_o_dau? rule
+    steps:
+      - intent: Kham_Co_xuong_khop_thuong_o_dau?
+      - action: utter_Kham_Co_xuong_khop_thuong_o_dau?
+  - rule: Kham_co_xuong_khop_thac_si_o_dau? rule
+    steps:
+      - intent: Kham_co_xuong_khop_thac_si_o_dau?
+      - action: utter_Kham_co_xuong_khop_thac_si_o_dau?
+  - rule: Kham_co_xuong_khop_tien_si_o_dau? rule
+    steps:
+      - intent: Kham_co_xuong_khop_tien_si_o_dau?
+      - action: utter_Kham_co_xuong_khop_tien_si_o_dau?
+  - rule: Kham_co_xuong_khop_pho_giao_su_o_dau? rule
+    steps:
+      - intent: Kham_co_xuong_khop_pho_giao_su_o_dau?
+      - action: utter_Kham_co_xuong_khop_pho_giao_su_o_dau?
+  - rule: Khoa_San_o_dau? rule
+    steps:
+      - intent: Khoa_San_o_dau?
+      - action: utter_Khoa_San_o_dau?
+  - rule: Khoa_Tai_mui_hong_o_dau rule
+    steps:
+      - intent: Khoa_Tai_mui_hong_o_dau
+      - action: utter_Khoa_Tai_mui_hong_o_dau
+  - rule: Khoa_Rang_ham_mat_o_dau rule
+    steps:
+      - intent: Khoa_Rang_ham_mat_o_dau
+      - action: utter_Khoa_Rang_ham_mat_o_dau
+  - rule: Khoa_Kiem_tra_suc_khoe_o_dau? rule
+    steps:
+      - intent: Khoa_Kiem_tra_suc_khoe_o_dau?
+      - action: utter_Khoa_Kiem_tra_suc_khoe_o_dau?
+  - rule: Phong_kham_Nhi_o_dau? rule
+    steps:
+      - intent: Phong_kham_Nhi_o_dau?
+      - action: utter_Phong_kham_Nhi_o_dau?
+  - rule: Khoa_phau_thuat_than_tiet_nieu_&_nam_hoc_o_dau? rule
+    steps:
+      - intent: Khoa_phau_thuat_than_tiet_nieu_&_nam_hoc_o_dau?
+      - action: utter_Khoa_phau_thuat_than_tiet_nieu_&_nam_hoc_o_dau?
+  - rule: Khoa_Noi_nhi_tong_hop_o_dau? rule
+    steps:
+      - intent: Khoa_Noi_nhi_tong_hop_o_dau?
+      - action: utter_Khoa_Noi_nhi_tong_hop_o_dau?
+  - rule: Phong_kham_ngoai_tong_hop_o_dau? rule
+    steps:
+      - intent: Phong_kham_ngoai_tong_hop_o_dau?
+      - action: utter_Phong_kham_ngoai_tong_hop_o_dau?
+  - rule: Dang_ky_dich_vu_tiem_chung_o_dau? rule
+    steps:
+      - intent: Dang_ky_dich_vu_tiem_chung_o_dau?
+      - action: utter_Dang_ky_dich_vu_tiem_chung_o_dau?
+  - rule: Sao_luu_trich_luc_benh_an_o_dau? rule
+    steps:
+      - intent: Sao_luu_trich_luc_benh_an_o_dau?
+      - action: utter_Sao_luu_trich_luc_benh_an_o_dau?
+  - rule: Xin_dau_vao_don_thuoc_o_dau rule
+    steps:
+      - intent: Xin_dau_vao_don_thuoc_o_dau
+      - action: utter_Xin_dau_vao_don_thuoc_o_dau
+  - rule: Tra_so_BHYT_o_dau? rule
+    steps:
+      - intent: Tra_so_BHYT_o_dau?
+      - action: utter_Tra_so_BHYT_o_dau?
+  - rule: Photo_giay_to_o_dau? rule
+    steps:
+      - intent: Photo_giay_to_o_dau?
+      - action: utter_Photo_giay_to_o_dau?
+  - rule: Lay_mau_o_dau? rule
+    steps:
+      - intent: Lay_mau_o_dau?
+      - action: utter_Lay_mau_o_dau?
+  - rule: Phong_tai_chinh_ke_toan__o_dau? rule
+    steps:
+      - intent: Phong_tai_chinh_ke_toan__o_dau?
+      - action: utter_Phong_tai_chinh_ke_toan__o_dau?
+  - rule: Phong_ke_hoach_tong_hop_o_dau? rule
+    steps:
+      - intent: Phong_ke_hoach_tong_hop_o_dau?
+      - action: utter_Phong_ke_hoach_tong_hop_o_dau?
+  - rule: Thanh_toan_BHYT_o_dau? rule
+    steps:
+      - intent: Thanh_toan_BHYT_o_dau?
+      - action: utter_Thanh_toan_BHYT_o_dau?
+  - rule: Khoa_Phau_thuat_tao_hinh_tham_my_o_dau? rule
+    steps:
+      - intent: Khoa_Phau_thuat_tao_hinh_tham_my_o_dau?
+      - action: utter_Khoa_Phau_thuat_tao_hinh_tham_my_o_dau?
+  - rule: Khoa_Phau_thuat_than_kinh_o_dau? rule
+    steps:
+      - intent: Khoa_Phau_thuat_than_kinh_o_dau?
+      - action: utter_Khoa_Phau_thuat_than_kinh_o_dau?
+  - rule: Khoa_than_nhan_tao_o_dau? rule
+    steps:
+      - intent: Khoa_than_nhan_tao_o_dau?
+      - action: utter_Khoa_than_nhan_tao_o_dau?
+  - rule: Khoa_duoc_o_dau? rule
+    steps:
+      - intent: Khoa_duoc_o_dau?
+      - action: utter_Khoa_duoc_o_dau?
+  - rule: Khoa_benh_nhiet_doi_o_dau? rule
+    steps:
+      - intent: Khoa_benh_nhiet_doi_o_dau?
+      - action: utter_Khoa_benh_nhiet_doi_o_dau?
+  - rule: Khoa_y_hoc_co_truyen_o_dau? rule
+    steps:
+      - intent: Khoa_y_hoc_co_truyen_o_dau?
+      - action: utter_Khoa_y_hoc_co_truyen_o_dau?
+  - rule: Khoa_ngoai_chan_thuong_o_dau? rule
+    steps:
+      - intent: Khoa_ngoai_chan_thuong_o_dau?
+      - action: utter_Khoa_ngoai_chan_thuong_o_dau?
+  - rule: Khoa_phuc_hoi_chuc_nang_o_dau? rule
+    steps:
+      - intent: Khoa_phuc_hoi_chuc_nang_o_dau?
+      - action: utter_Khoa_phuc_hoi_chuc_nang_o_dau?
+  - rule: Khoa_noi_gan_mat_o_dau? rule
+    steps:
+      - intent: Khoa_noi_gan_mat_o_dau?
+      - action: utter_Khoa_noi_gan_mat_o_dau?
+  - rule: Khoa_hoi_suc_tich_cuc_o_dau? rule
+    steps:
+      - intent: Khoa_hoi_suc_tich_cuc_o_dau?
+      - action: utter_Khoa_hoi_suc_tich_cuc_o_dau?
+  - rule: Khoa_dinh_duong_o_dau? rule
+    steps:
+      - intent: Khoa_dinh_duong_o_dau?
+      - action: utter_Khoa_dinh_duong_o_dau?
+  - rule: Khoa_kiem_soat_nhiem_khuan_o_dau? rule
+    steps:
+      - intent: Khoa_kiem_soat_nhiem_khuan_o_dau?
+      - action: utter_Khoa_kiem_soat_nhiem_khuan_o_dau?
+  - rule: Khoa_phau_thuat_-_gay_me_hoi_suc_o_dau? rule
+    steps:
+      - intent: Khoa_phau_thuat_-_gay_me_hoi_suc_o_dau?
+      - action: utter_Khoa_phau_thuat_-_gay_me_hoi_suc_o_dau?
+  - rule: Khoa_vi_sinh_o_dau? rule
+    steps:
+      - intent: Khoa_vi_sinh_o_dau?
+      - action: utter_Khoa_vi_sinh_o_dau?
+  - rule: Khoa_sinh_hoa_o_dau? rule
+    steps:
+      - intent: Khoa_sinh_hoa_o_dau?
+      - action: utter_Khoa_sinh_hoa_o_dau?
+  - rule: Khoa_huyet_hoc_o_dau? rule
+    steps:
+      - intent: Khoa_huyet_hoc_o_dau?
+      - action: utter_Khoa_huyet_hoc_o_dau?
+  - rule: Khoa_chan_doan_hinh_anh_o_dau? rule
+    steps:
+      - intent: Khoa_chan_doan_hinh_anh_o_dau?
+      - action: utter_Khoa_chan_doan_hinh_anh_o_dau?
+  - rule: Khoa_ngoai_tong_hop_o_dau? rule
+    steps:
+      - intent: Khoa_ngoai_tong_hop_o_dau?
+      - action: utter_Khoa_ngoai_tong_hop_o_dau?
+  - rule: Khoa_ung_buou_o_dau? rule
+    steps:
+      - intent: Khoa_ung_buou_o_dau?
+      - action: utter_Khoa_ung_buou_o_dau?
+  - rule: Thu_ngan_o_dau? rule
+    steps:
+      - intent: Thu_ngan_o_dau?
+      - action: utter_Thu_ngan_o_dau?
+  - rule: Thu_tuc_nhap_vien rule
+    steps:
+      - intent: Thu_tuc_nhap_vien
+      - action: utter_Thu_tuc_nhap_vien
+
+  - rule: Tam_ung_tien rule
+    steps:
+      - intent: Tam_ung_tien
+      - action: utter_Tam_ung_tien
+
+  - rule: Khoa_kham_benh_o_dau rule
+    steps:
+      - intent: Khoa_kham_benh_o_dau
+      - action: utter_Khoa_kham_benh_o_dau
+
+  - rule: Em_muon_dang_ki_kham_bao_hiem_y_te rule
+    steps:
+      - intent: Em_muon_dang_ki_kham_bao_hiem_y_te
+      - action: utter_Em_muon_dang_ki_kham_bao_hiem_y_te
+  - rule: Em_muon_dang_ki_kham_theo_yeu_cau rule
+    steps:
+      - intent: Em_muon_dang_ki_kham_theo_yeu_cau
+      - action: utter_Em_muon_dang_ki_kham_theo_yeu_cau
+  - rule: Giay_to_can_thiet_kham_la_gi? rule
+    steps:
+      - intent: Giay_to_can_thiet_kham_la_gi?
+      - action: utter_Giay_to_can_thiet_kham_la_gi?
+  - rule: Thoi_gian_lam_viec_cua_benh_vien rule
+    steps:
+      - intent: Thoi_gian_lam_viec_cua_benh_vien
+      - action: utter_Thoi_gian_lam_viec_cua_benh_vien
+  - rule: Dang_ky_su_dung_the_khach_hang_nhu_the_nao? rule
+    steps:
+      - intent: Dang_ky_su_dung_the_khach_hang_nhu_the_nao?
+      - action: utter_Dang_ky_su_dung_the_khach_hang_nhu_the_nao?
+
+  - rule: Theo_doi_ket_qua_kham_tren_dien_thoai_nhu_the_nao? rule
+    steps:
+      - intent: Theo_doi_ket_qua_kham_tren_dien_thoai_nhu_the_nao?
+      - action: utter_Theo_doi_ket_qua_kham_tren_dien_thoai_nhu_the_nao?
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase
+
+  - rule: cam_on rule
+    steps:
+      - intent: cam_on
+      - action: utter_cam_on
+
+  - rule: gioi_thieu_cong_ty rule
+    steps:
+      - intent: gioi_thieu_cong_ty
+      - action: utter_gioi_thieu_cong_ty
+
+  - rule: hoi_ve_thoi_tiet rule
+    steps:
+      - intent: hoi_ve_thoi_tiet
+      - action: utter_hoi_ve_thoi_tiet
+
+  - rule: khen_chatbot rule
+    steps:
+      - intent: khen_chatbot
+      - action: utter_khen_chatbot
+
+  - rule: hoi_an_chua rule
+    steps:
+      - intent: hoi_an_chua
+      - action: utter_hoi_an_chua
+
+  - rule: di_choi_khong rule
+    steps:
+      - intent: di_choi_khong
+      - action: utter_di_choi_khong

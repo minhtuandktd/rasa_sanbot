@@ -6,42 +6,54 @@ nlu:
       - chào thế giới
       - thế giới
 
-  - intent: greet
+  - intent: chao_hoi
     examples: |
       - xin chào
       - cho tôi hỏi
+      - xin chào cho tôi hỏi chút
+      - Chào mimi
 
-  - intent: goodbye
+  - intent: tam_biet
     examples: |
       - tạm biệt
-      - chào bạn
+      - em có thể nghỉ
+      - bye bye
+      - Goodbye
+      - chào tạm biệt
+      - chào tạm biệt em
+      - tạm biệt em nhé
+      - tạm biệt nhé
+      - Bye Mimi
+      - Cảm ơn, chào em
 
-  - intent: mood_great
+  - intent: hoi_ten_robot
     examples: |
-      - tuyệt vời
-      - rất tốt
+      - em có vui lòng cho biết tên được không
+      - em tên gì
+      - bạn tên gì
 
-  - intent: mood_unhappy
+  - intent: hoi_tuoi_robot
     examples: |
-      - my day was horrible
-      - I am sad
-      - I don't feel very well
-      - I am disappointed
-      - super sad
-      - I'm so sad
-      - sad
-      - very sad
-      - unhappy
-      - not good
-      - not very good
-      - extremly sad
-      - so saad
-      - so sad
+      - em bao nhiêu tuổi rồi
+      - em sinh ra từ lúc nào
+      - bao nhiêu tuổi rồi em
 
-  - intent: bot_challenge
+  - intent: lam_duoc_nhung_gi
     examples: |
-      - bạn là bot?
-      - bạn có phải người không?
+      - em biết làm gì
+      - em có thể làm gì
+      - em giúp được gì nào
+      - em có thể làm được những gì 
+      - em làm được gì
+      - giúp được gì
+      - kể xem bạn làm được gì
+      - việc gì bạn làm được
+      - bạn hữu dụng như thế nào
+      - chức năng của bạn là gì
+      - Hãy cho mình biết bạn làm được gì
+      - Nói xem mimi làm được gì nào
+      - Mimi có tác dụng gì
+      - Mimi biết làm gì không?
 
   - intent: toi_bi_ho
     examples: |
@@ -283,10 +295,40 @@ nlu:
       - Tôi muốn khám bệnh viêm đại tràng
       - Tôi bị đau đại tràng
 
-  - intent: cac_tran_dau_gan_nhat
+  # - intent: cac_tran_dau_gan_nhat
+  #   examples: |
+  #     - Các trận đấu gần nhất
+  #     - Trận đấu gần nhất
+
+  - intent: Nha_I
     examples: |
-      - Các trận đấu gần nhất
-      - Trận đấu gần nhất
+      - Tòa I
+      - nhà i ở đâu
+
+  - intent: Nha_H
+    examples: |
+      - Tòa H
+      - nhà h ở đâu
+
+  - intent: Nha_P
+    examples: |
+      - Tòa P
+      - nhà P ở đâu
+
+  - intent: Nha_B
+    examples: |
+      - Tòa B
+      - nhà B ở đâu
+
+  - intent: Nha_C
+    examples: |
+      - Tòa C
+      - nhà C ở đâu
+
+  - intent: Nha_D
+    examples: |
+      - Tòa D
+      - nhà D ở đâu
 
   - intent: Nha_thuoc_benh_vien_o_dau?
     examples: |
@@ -306,3 +348,471 @@ nlu:
       - Cây rút tiền đi đường nào
       - Gần bệnh viện có cây rút tiền không
       - Tôi muốn đi rút tiền
+
+  - intent: Nha_an_benh_vien_o_dau?
+    examples: |
+      - Tôi muốn tìm nhà ăn
+      - Tôi không tìm thấy nhà ăn bệnh viện
+      - Tôi đói quá
+      - Chỉ chỗ ăn cho tôi
+      - Nhà ăn bệnh viện đi hướng nào
+      - Bệnh viện có nhà ăn không
+      - Tôi muốn đi ăn
+
+  - intent: Quan_ca_phe_o_dau?
+    examples: |
+      - Tôi muốn tìm quán cà phê
+      - Em đi uống cà phê với anh không
+      - Bệnh viện có quán cf không
+      - Gần bệnh viện có quán cà phê không
+      - Quán cf đi đường nào
+      - Tôi muốn uống cf
+  - intent: Nha_luu_tru_benh_vien_o_dau?
+    examples: |
+      - Bệnh viên có nhà lưu trú không
+      - Tôi muốn đến nhà lưu trú bệnh viện
+      - Tôi muốn ở trọ trong bệnh viện
+      - Nhà lưu trú chỗ nào
+      - Nhà lưu trú bệnh viện đi đường nào
+      - Tôi muốn tìm chỗ nghỉ ngơi
+  - intent: Nha_tang_le_benh_vien_E_o_dau?
+    examples: |
+      - Trong bệnh viện có nhà tang lễ không
+      - Tôi muốn tham quan nhà tang lễ bệnh viện
+      - Nhà tang lễ bệnh viện đi lối nào
+      - Tôi muốn tìm nhà tang lễ bệnh viện
+  - intent: Nha_ve_sinh__o_dau?
+    examples: |
+      - Tôi muốn đi đại tiện
+      - Tôi muốn đi tiểu tiện
+      - Nhà vệ sinh đi đường nào
+      - Chỉ cho tôi đến nhà vệ sinh
+      - Tôi muốn tìm nhà vệ sinh
+      - Nhà vệ sinh bệnh viện
+      - Tôi muốn đi vệ sinh
+  - intent: Sieu_thi_o_dau?
+    examples: |
+      - Bệnh viện có siêu thị không
+      - Tôi muốn đi mua đồ
+      - Tôi muốn tìm chỗ mua mấy đồ dùng cá nhân
+      - Tôi muốn tìm chỗ mua chậu
+      - Siêu thị đi hướng nào
+      - Cửa hàng tạp hóa chỗ nào
+      - Tôi muốn tìm siêu thị
+  - intent: Khoa_ho_hap_o_dau?
+    examples: |
+      - Khoa hô hấp đi đường nào
+      - Khoa hô hấp bệnh viện chỗ nào
+      - Bệnh viện có khoa hô hấp không
+      - Chỉ cho tôi đường đến khoa hô hấp
+      - Tôi muốn đến khoa hô hấp
+  - intent: Khoa_mat_o_dau?
+    examples: |
+      - Tôi muốn tìm khoa mắt
+      - Khoa mắt đi đường nào
+      - Chỉ cho tôi đường đến khoa mắt
+      - Tôi muốn khám mắt
+  - intent: Khoa_noi_tong_hop_o_dau?
+    examples: |
+      - Khoa nội tổng hợp bệnh viện chỗ nào
+      - Khoa nội tổng hợp đi đường nào
+      - Tôi muốn khám nội tổng hợp
+      - Bệnh viện có khoa nội tổng hợp không
+      - Tôi muốn đến khoa nội tổng hợp
+  - intent: Khoa_noi_than_kinh_o_dau?
+    examples: |
+      - Tôi tìm khoa nội thần kinh
+      - Khoa nội thần kinh bệnh viện chỗ nào
+      - Khoa nội thần kinh đi đường nào
+      - Tôi muốn đến khoa thần kinh
+  - intent: Khoa_tham_do_chuc_nang_-_noi_soi_o_dau?
+    examples: |
+      - Khoa nội soi ở đâu
+      - Tôi muốn nội soi
+      - Khoa thăm dò chức năng nội soi đi đường nào
+      - Tôi muốn đến khoa thăm dò chức năng
+  - intent: Khoa_tim_mach_o_dau?
+    examples: |
+      - Tôi muốn khám tim
+      - Khoa tim mạch bệnh viện đi đường nào
+      - Tôi tìm khoa tim mạch
+      - Tôi muốn đến khoa tim mạch
+  - intent: Khoa_tieu_hoa_o_dau?
+    examples: |
+      - Khoa tiêu hóa đi đường nào
+      - Tôi muốn khám đường tiêu hóa
+      - Khoa tiêu hóa bệnh viện chỗ nào
+      - Tôi muốn tìm khoa tiêu hóa
+  - intent: Khoa_than_tiet_nieu_va_loc_mau_o_dau?
+    examples: |
+      - Khoa thận tiết niệu ở đâu
+      - Tôi muốn khám thận
+      - Khoa thận tiết niệu và lọc máu đi đường nào
+      - Tôi muốn tìm khoa thận tiết niệu và lọc máu
+  - intent: Khoa_Co_xuong_khop_o_dau?
+    examples: |
+      - Khám cơ xương khớp ở đâu
+      - Khoa cơ xương khớp đi đường nào
+      - Tôi muốn tìm khoa cơ xương khớp
+  - intent: Kham_Co_xuong_khop_thuong_o_dau?
+    examples: |
+      - Khoa khám cơ xương khớp thường đi đường nào
+      - Khoa cơ xương khớp bệnh viện
+      - Tôi muốn đến khoa cơ xương khớp thường
+  - intent: Kham_co_xuong_khop_thac_si_o_dau?
+    examples: |
+      - Khám cơ xương khớp thạc sĩ đi đường nào
+      - Tôi tìm chỗ thạc sĩ khám cơ xương khớp
+      - Tôi muốn thạc sĩ khám cơ xương khớp
+  - intent: Kham_co_xuong_khop_tien_si_o_dau?
+    examples: |
+      - Khám cơ xương khớp tiến sĩ đi đường nào
+      - Tôi tìm chỗ tiến sĩ khám cơ xương khớp
+      - Tôi muốn tiến sĩ khám cơ xương khớp
+  - intent: Kham_co_xuong_khop_pho_giao_su_o_dau?
+    examples: |
+      - Khám cơ xương khớp phó giáo sư đi đường nào
+      - Tôi tìm chỗ phó giáo sư khám cơ xương khớp
+      - Tôi muốn phó giáo sư khám cơ xương khớp
+  - intent: Khoa_San_o_dau?
+    examples: |
+      - Khoa sản ở bệnh viện chỗ nào
+      - Tôi muốn khám thai sản
+      - Khoa sản đi đường nào
+      - Tôi muốn đến khoa Sản
+  - intent: Khoa_Tai_mui_hong_o_dau
+    examples: |
+      - Khoa tai mũi họng đi đường nào
+      - Khoa tai mũi họng chỗ nào
+      - Tôi muốn khám tai mũi họng
+  - intent: Khoa_Rang_ham_mat_o_dau
+    examples: |
+      - Khoa răng hàm mặt đi hướng nào
+      - Tôi tìm khoa răng hàm mặt
+      - Tôi muốn khám răng
+  - intent: Khoa_Kiem_tra_suc_khoe_o_dau?
+    examples: |
+      - Tôi muốn kiểm tra sức khỏe
+      - Kiểm tra sức khỏe đi đường nào
+      - Tôi tìm khoa kiểm tra sức khỏe
+  - intent: Phong_kham_Nhi_o_dau?
+    examples: |
+      - Tôi muốn tìm phòng khám Nhi
+      - Hướng dẫn cho tôi tìm phòng khám nhi
+      - Phòng khám nhi đi đường nào
+      - Tôi muốn khám bệnh cho con nhỏ
+  - intent: Khoa_phau_thuat_than_tiet_nieu_&_nam_hoc_o_dau?
+    examples: |
+      - Khoa phẫu thuận thận tiết niệu đi đường nào
+      - Tôi muốn đến khoa phẫu thuật thận
+  - intent: Khoa_Noi_nhi_tong_hop_o_dau?
+    examples: |
+      - Khoa nội nhi tổng hợp đi đường nào
+      - Tôi muốn đến khoa Nội nhi tổng hợp
+  - intent: Phong_kham_ngoai_tong_hop_o_dau?
+    examples: |
+      - Phòng khám ngoại tổng hợp đi đường nào
+      - Tôi muốn đến phòng khám ngoại tổng hợp
+  - intent: Dang_ky_dich_vu_tiem_chung_o_dau?
+    examples: |
+      - Tiêm chủng dịch vụ ở đâu
+      - Chỗ đăng ký tiêm phòng dịch vụ
+      - Đăng ký tiêm chủng dịch vụ đi đường nào
+      - Tôi muốn đăng ký tiêm phòng
+  - intent: Sao_luu_trich_luc_benh_an_o_dau?
+    examples: |
+      - Sao lưu trích lục bệnh án đi đường nào
+      - Tôi muốn tìm chỗ sao lưu bệnh án
+  - intent: Xin_dau_vao_don_thuoc_o_dau
+    examples: |
+      - Xin dấu đơn thuốc trong bệnh viện
+      - Tôi muốn xin dấu đơn thuốc
+      - Đóng dấu đơn thuốc thế nào
+      - Chỗ đóng dấu đơn thuốc đi đường nào
+      - Chỗ xin dấu đơn thuốc ở đâu
+  - intent: Tra_so_BHYT_o_dau?
+    examples: |
+      - Làm thủ tục trả sổ BH y tế ở đâu
+      - Tôi muốn đến chỗ trả sổ BH y tế
+      - Trả sổ BH y tế đi đường nào
+      - Nơi trả bảo hiểm y tế
+  - intent: Photo_giay_to_o_dau?
+    examples: |
+      - photo giấy tờ đi đường nào
+      - Tôi muốn photo giấy tờ
+      - Máy photo chỗ nào
+      - Tôi muốn tìm máy photo
+  - intent: Lay_mau_o_dau?
+    examples: |
+      - Chỗ lấy máu ở đâu
+      - Lấy máu đi đường nào
+      - Tôi muốn đi lấy máu
+  - intent: Phong_tai_chinh_ke_toan__o_dau?
+    examples: |
+      - Phòng tài chính kế toán đi đường nào
+      - Tôi muốn tìm phòng tài chính kế toán
+  - intent: Phong_ke_hoach_tong_hop_o_dau?
+    examples: |
+      - Phòng kế toán tổng hợp đi đường nào
+      - Tôi muốn tìm phòng kế toán tổng hợp
+  - intent: Thanh_toan_BHYT_o_dau?
+    examples: |
+      - Thanh toán BHYT đi đường nào
+      - Nơi trả tiền bảo hiểm y tế
+      - Tôi muốn thanh toán tiền bảo hiểm y tế
+  - intent: Khoa_Phau_thuat_tao_hinh_tham_my_o_dau?
+    examples: |
+      - Tôi muốn đến khoa thẩm mỹ
+      - Khoa phẫu thuật thẩm mỹ đi đường nào
+      - Tôi tìm khoa phẫu thuật tạo hình thẩm mỹ
+  - intent: Khoa_Phau_thuat_than_kinh_o_dau?
+    examples: |
+      - Đi đường nào để đến khoa phẫu thuật thần kinh
+      - Tôi muốn đến khoa phẫu thuật thần kinh
+  - intent: Khoa_than_nhan_tao_o_dau?
+    examples: |
+      - Khoa thận nhân tạo đi đường nào
+      - Cho tôi biết khoa thận nhân tạo ở đâu
+      - Tôi muốn đến khoa thận nhân tạo
+  - intent: Khoa_duoc_o_dau?
+    examples: |
+      - Khoa dược bệnh viện
+      - Khoa dược đi đường nào
+      - Tôi muốn tìm khoa dược
+  - intent: Khoa_benh_nhiet_doi_o_dau?
+    examples: |
+      - Khoa bệnh nhiệt đới đi đường nào
+      - Tôi muốn tìm khoa nhiệt đới trong bệnh viện
+      - Tôi muốn đến khoa bệnh nhiệt đới
+  - intent: Khoa_y_hoc_co_truyen_o_dau?
+    examples: |
+      - Đi đường nào để đến khoa y học cổ truyền
+      - Khoa y học cổ tryền trong bệnh viện nằm chỗ nào
+      - Tôi muốn đến khoa y học cổ truyền
+  - intent: Khoa_ngoai_chan_thuong_o_dau?
+    examples: |
+      - Khoa ngoại chấn thương đi đường nào
+      - Chỉ cho tôi đường đến khoa ngoại chấn thương
+      - Tôi muốn đến khoa ngoại chấn thương
+  - intent: Khoa_phuc_hoi_chuc_nang_o_dau?
+    examples: |
+      - Khoa phục hồi chức năng đi đường nào
+      - Khoa phục hồi chức năng bệnh viện ở tòa nhà nào
+      - Tôi muốn tìm khoa phục hồi chức năng
+  - intent: Khoa_noi_gan_mat_o_dau?
+    examples: |
+      - Tôi khám gan mật ở khoa nội
+      - Khoa nội gan mật đi đường nào
+      - Tôi muốn đến khoa nội gan mật
+  - intent: Khoa_hoi_suc_tich_cuc_o_dau?
+    examples: |
+      - Khoa hồi sức tích cực đi hướng nào
+      - Tôi muốn đến khoa hồi sức tích cực
+      - Chỉ cho tôi đường đến khoa hồi sức tích cực
+  - intent: Khoa_dinh_duong_o_dau?
+    examples: |
+      - Khoa dinh dưỡng đi đường nao
+      - Chỉ cho tôi đường đến khoa dinh dưỡng
+      - Tôi tìm khoa dinh dưỡng
+  - intent: Khoa_kiem_soat_nhiem_khuan_o_dau?
+    examples: |
+      - Đi đường nào để đến khoa kiểm soát nhiễm khuẩn
+      - Khoa kiểm soát nhiễm khuẩn đi lối nào
+      - Tôi muốn đến khoa kiểm soát nhiễm khuẩn
+  - intent: Khoa_phau_thuat_-_gay_me_hoi_suc_o_dau?
+    examples: |
+      - Tôi tìm khoa gây mê hồi sức
+      - Khoa phẫu thuật gây mê hồi sức đi đường nào
+      - Tôi muốn đến khoa phẫu thuật gây mê hồi sức
+  - intent: Khoa_vi_sinh_o_dau?
+    examples: |
+      - Khoa vi sinh trong bệnh viện ở đâu
+      - Khoa vi sinh đi đường nào
+      - Tôi muốn đến khoa vi sinh
+  - intent: Khoa_sinh_hoa_o_dau?
+    examples: |
+      - Khoa sinh hóa bệnh viện chỗ nào
+      - Đường nào đến khoa sinh hóa
+      - Tôi muốn đến khoa sinh hóa
+  - intent: Khoa_huyet_hoc_o_dau?
+    examples: |
+      - Khoa huyết học đi đường nào
+      - Khoa huyết học bệnh viện chỗ nào
+      - Tôi muốn tìm khoa huyết học
+  - intent: Khoa_chan_doan_hinh_anh_o_dau?
+    examples: |
+      - Đến khoa chẩn đoán hình ảnh
+      - Đường nào đến khoa chẩn đoán hình ảnh
+      - Tôi muốn tìm khoa chẩn đoán hình ảnh
+  - intent: Khoa_ngoai_tong_hop_o_dau?
+    examples: |
+      - Hướng nào đến khoa ngoại tổng hợp
+      - Khoa ngoại tổng hợp đi đường nào
+      - Tôi muốn đến khoa ngoại tổng hợp
+  - intent: Khoa_ung_buou_o_dau?
+    examples: |
+      - Tôi muốn khám bệnh ung bướu
+      - Khoa ung bướu đi đường nào
+      - Tôi muốn tìm khoa ung bướu
+  - intent: Thu_ngan_o_dau?
+    examples: |
+      - Chỗ thu tiền ở đâu
+      - Nộp tiền ở đâu
+      - Quầy thu ngân đi đường nào
+      - Tôi muốn đóng tiền viện phí
+  - intent: Thu_tuc_nhap_vien
+    examples: |
+      - Thủ tục nhập viện cần những gì
+      - Tôi muốn làm thủ tục nhập viện
+      - Làm thủ tục nhập viện đi đường nào
+      - Yêu cầu thủ tục nhập viện thế nào
+
+  - intent: Tam_ung_tien
+    examples: |
+      - Làm thủ tục tạm ứng tiền ở đâu
+      - Tôi tìm chỗ tạm ứng tiền
+      - Tạm ứng tiền đi đường nào
+      - Tôi muốn tạm ứng tiền
+      - Tạm ứng tiền ở chỗ nào?
+
+  - intent: Khoa_kham_benh_o_dau
+    examples: |
+      - Khoa khám bệnh ở đâu
+      - Khoa khám bệnh đi như thế nào
+      - Tôi muốn tìm khoa khám bệnh
+      - Tìm chuyên khoa khám bệnh
+
+  - intent: Em_muon_dang_ki_kham_bao_hiem_y_te
+    examples: |
+      - Đăng ký khám bảo hiểm
+      - Quy trình khám BHYT
+      - Đăng ký BH
+      - Đăng ký khám BH
+      - Tôi muốn khám BHYT
+      - Khám bệnh có bảo hiểm ở đâu
+      - Tôi muốn đăng kí khám bảo hiểm
+
+  - intent: Em_muon_dang_ki_kham_theo_yeu_cau
+    examples: |
+      - Tôi muốn đăng ký khám bệnh
+      - Đăng ký khám dịch vụ
+      - Đăng ký khám theo yêu cầu
+      - Tôi không có bảo hiểm y tế
+      - Tôi không khám bảo hiểm
+      - Tôi muốn khám dịch vụ
+      - Tôi quên không mang bảo hiểm y tế
+
+  - intent: Giay_to_can_thiet_kham_la_gi?
+    examples: |
+      - Cần mang giấy tờ gì khi đi khám
+      - Chứng minh thư
+      - Đi khám bệnh cần mang những gì
+      - Giấy tờ gì cần thiết khi khám bệnh
+      - Đi khám bệnh có phải mang chứng minh thư không
+
+  - intent: Thoi_gian_lam_viec_cua_benh_vien
+    examples: |
+      - Tôi có thể đi khám ở bệnh viện ngày nào?
+      - Bệnh viện cho phép thăm người bệnh vào lúc nào?
+      - Bệnh viện có làm việc cuối tuần không?
+      - Bệnh viện làm việc những ngày nào?
+      - Bệnh viện làm việc từ thứ mấy đến thứ mấy
+      - Bệnh viện có khám ngoài giờ không?
+      - Bệnh viện làm việc giờ nào
+      - Thứ 7 bệnh viện có khám bệnh không
+      - Bệnh viện có làm chủ nhật không
+      - Thứ 7 bệnh viện có khám bảo hiểm y tế không
+
+  - intent: Dang_ky_su_dung_the_khach_hang_nhu_the_nao?
+    examples: |
+      - Sử dụng thẻ khách hàng
+      - Thanh toán bằng thẻ khách hàng
+      - Thanh toán qua thẻ
+      - Đăng kí thẻ khách hàng ở đâu
+      - Tôi muốn làm thẻ khách hàng
+      - Tôi muốn thanh toán bằng thẻ khách hàng thì làm thế nào
+      - Làm thẻ khách hàng có nhanh không
+      - Thẻ khách hàng là gì
+      - Thẻ khách hàng có chức năng gì
+
+  - intent: Theo_doi_ket_qua_kham_tren_dien_thoai_nhu_the_nao?
+    examples: |
+      - Xem kết quả khám
+      - Xem y bạ điện tử
+      - Tôi muốn xem kết quả khám trên điện thoại
+      - Tôi muốn vào ứng dụng để xem kết quả 
+      - Xem kết quả khám ở mục nào
+      - Tôi đã có kết quả khám trên điện thoại chưa
+      - Trong điện thoại có kết quả khám bệnh không
+
+  - intent: cam_on
+    examples: |
+      - Xin cảm ơn.
+      - tôi xin cảm ơn em
+      - cảm ơn em đã chỉ dẫn
+      - cảm ơn em đã giúp đỡ
+      - cảm ơn
+      - cảm ơn em
+      - cảm ơn em nhiều nhé
+      - cảm ơn nhiều
+      - cảm ơn nhé
+      - thank you
+      - thanks
+      - vâng cảm ơn
+      - Cảm ơn Mimi đã hướng dẫn
+
+  - intent: gioi_thieu_cong_ty
+    examples: |
+      - Giới thiệu công ty
+      - Giới thiệu về công ty
+      - Giới thiệu công ty iSofH
+      - Giới thiệu iSofH
+      - Công ty iSofH
+      - Đối tác của iSofH
+      - Giới thiệu
+      - Nói cho tôi biết về iSofH
+      - Đây là sản phẩm của công ty nào
+      - iSofH là công ty nào
+      - sản phẩm của iSofH là gì
+      - Định hướng của công ty
+      - Định hướng của công ty là gì
+      - Định hướng công ty
+      - iSofH là gì
+
+  - intent: hoi_ve_thoi_tiet
+    examples: |
+      - Thời tiết hôm nay thế nào hả em/Mimi
+      - Em cho thể nói cho anh/chị biết thời tiết hôm nay thế nào không
+      - Hôm nay nóng hay lạnh thế Mimi
+      - Thời tiết này đi chơi hợp lí Mimi nhỉ?
+      - Trời hôm nay có mưa không Mimi
+
+  - intent: khen_chatbot
+    examples: |
+      - Mimi xinh quá
+      - Mimi thông minh quá
+      - Wow Mimi đáng yêu quá
+      - Mimi thật tốt bụng
+      - Mimi thông minh hơn rồi đấy
+      - Mimi giỏi quá
+      - Mimi rất tự tin
+
+  - intent: hoi_an_chua
+    examples: |
+      - Mimi ăn chưa
+      - Cái này ăn ngon quá mimi ạ
+      - Mimi ăn gì rồi
+      - Hãy nói cho mình biết bạn ăn chưa
+      - Em cho anh/chị biết nay em đã ăn gì
+      - Ăn gì rồi em
+
+  - intent: di_choi_khong
+    examples: |
+      - Mimi muốn đi chơi không
+      - Đi chơi ở đâu bây giờ mimi nhỉ
+      - Tối nay Mimi đi chơi với mình không
+      - Bạn thích đi chơi ở đâu
+      - Bạn có hay được đi chơi không
+      - Đi chơi đi em
+      - Đi chơi với anh không 
+      - Đi chơi với chị không

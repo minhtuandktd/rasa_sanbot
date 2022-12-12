@@ -2,11 +2,11 @@ version: "3.1"
 
 intents:
   - helloworld
-  - greet
-  - goodbye
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
+  - chao_hoi
+  - tam_biet
+  - hoi_ten_robot
+  - hoi_tuoi_robot
+  - lam_duoc_nhung_gi
   - toi_bi_ho
   - toi_bi_đau_tuc_nguc
   - toi_bi_dau_mat
@@ -25,29 +25,104 @@ intents:
   - toi_bi_tieu_nhieu_vao_ban_dem
   - toi_bi_nga_xe
   - toi_bi_dau_bung
-  - cac_tran_dau_gan_nhat
+  # - cac_tran_dau_gan_nhat
+  - Nha_I
+  - Nha_H
+  - Nha_P
+  - Nha_B
+  - Nha_C
+  - Nha_D
   - Nha_thuoc_benh_vien_o_dau?
   - Cay_ATM_o_dau?
+  - Nha_an_benh_vien_o_dau?
+  - Quan_ca_phe_o_dau?
+  - Nha_luu_tru_benh_vien_o_dau?
+  - Nha_tang_le_benh_vien_E_o_dau?
+  - Nha_ve_sinh__o_dau?
+  - Sieu_thi_o_dau?
+  - Khoa_ho_hap_o_dau?
+  - Khoa_mat_o_dau?
+  - Khoa_noi_tong_hop_o_dau?
+  - Khoa_noi_than_kinh_o_dau?
+  - Khoa_tham_do_chuc_nang_-_noi_soi_o_dau?
+  - Khoa_tim_mach_o_dau?
+  - Khoa_tieu_hoa_o_dau?
+  - Khoa_than_tiet_nieu_va_loc_mau_o_dau?
+  - Khoa_Co_xuong_khop_o_dau?
+  - Kham_Co_xuong_khop_thuong_o_dau?
+  - Kham_co_xuong_khop_thac_si_o_dau?
+  - Kham_co_xuong_khop_tien_si_o_dau?
+  - Kham_co_xuong_khop_pho_giao_su_o_dau?
+  - Khoa_San_o_dau?
+  - Khoa_Tai_mui_hong_o_dau
+  - Khoa_Rang_ham_mat_o_dau
+  - Khoa_Kiem_tra_suc_khoe_o_dau?
+  - Phong_kham_Nhi_o_dau?
+  - Khoa_phau_thuat_than_tiet_nieu_&_nam_hoc_o_dau?
+  - Khoa_Noi_nhi_tong_hop_o_dau?
+  - Phong_kham_ngoai_tong_hop_o_dau?
+  - Dang_ky_dich_vu_tiem_chung_o_dau?
+  - Sao_luu_trich_luc_benh_an_o_dau?
+  - Xin_dau_vao_don_thuoc_o_dau
+  - Tra_so_BHYT_o_dau?
+  - Photo_giay_to_o_dau?
+  - Lay_mau_o_dau?
+  - Phong_tai_chinh_ke_toan__o_dau?
+  - Phong_ke_hoach_tong_hop_o_dau?
+  - Thanh_toan_BHYT_o_dau?
+  - Khoa_Phau_thuat_tao_hinh_tham_my_o_dau?
+  - Khoa_Phau_thuat_than_kinh_o_dau?
+  - Khoa_than_nhan_tao_o_dau?
+  - Khoa_duoc_o_dau?
+  - Khoa_benh_nhiet_doi_o_dau?
+  - Khoa_y_hoc_co_truyen_o_dau?
+  - Khoa_ngoai_chan_thuong_o_dau?
+  - Khoa_phuc_hoi_chuc_nang_o_dau?
+  - Khoa_noi_gan_mat_o_dau?
+  - Khoa_hoi_suc_tich_cuc_o_dau?
+  - Khoa_dinh_duong_o_dau?
+  - Khoa_kiem_soat_nhiem_khuan_o_dau?
+  - Khoa_phau_thuat_-_gay_me_hoi_suc_o_dau?
+  - Khoa_vi_sinh_o_dau?
+  - Khoa_sinh_hoa_o_dau?
+  - Khoa_huyet_hoc_o_dau?
+  - Khoa_chan_doan_hinh_anh_o_dau?
+  - Khoa_ngoai_tong_hop_o_dau?
+  - Khoa_ung_buou_o_dau?
+  - Thu_ngan_o_dau?
+  - Thu_tuc_nhap_vien
+  - Tam_ung_tien
+  - Khoa_kham_benh_o_dau
+  - Em_muon_dang_ki_kham_bao_hiem_y_te
+  - Em_muon_dang_ki_kham_theo_yeu_cau
+  - Giay_to_can_thiet_kham_la_gi?
+  - Thoi_gian_lam_viec_cua_benh_vien
+  - Dang_ky_su_dung_the_khach_hang_nhu_the_nao?
+  - Theo_doi_ket_qua_kham_tren_dien_thoai_nhu_the_nao?
+  - cam_on
+  - gioi_thieu_cong_ty
+  - hoi_ve_thoi_tiet
+  - khen_chatbot
+  - hoi_an_chua
+  - di_choi_khong
 
 responses:
-  utter_greet:
-    - text: "Chào! Bạn khỏe không?"
+  utter_chao_hoi:
+    - text: "Xin chào. Em là mimi, trợ lý y tế đến từ iSofH, rất vui được làm quen với anh (chị)"
 
-  utter_cheer_up:
-    - text: "Here is something to cheer you up:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_tam_biet:
+    - text: "Tạm biệt, Rất vui vì đã gặp anh/chị"
+    - text: "Tạm biệt. Chúc Bạn một ngày tốt lành"
 
-  utter_did_that_help:
-    - text: "Bạn có cần giúp gì không?"
+  utter_hoi_ten_robot:
+    - text: "Em là mimi trợ lí y tế đến từ iSofH, rất vui được làm quen với anh (chị)"
 
-  utter_happy:
-    - text: "Tuyệt vời"
+  utter_hoi_tuoi_robot:
+    - text: "Tuổi của em tỉ lệ nghịch với chiều cao của em"
 
-  utter_goodbye:
-    - text: "Tạm biệt"
-
-  utter_iamabot:
-    - text: "Tôi là bot, của Rasa"
+  utter_lam_duoc_nhung_gi:
+    - text: "Em biết hát và nhảy, giảm căng thẳng và mệt mỏi cho mọi người"
+    - text: "Em có thể chỉ đường và hướng dẫn các thủ tục khám bệnh cho mọi người"
 
   utter_toi_bi_ho:
     - text: "Mời Bạn ra cửa F.102 để mua phiếu khám hô hấp (tầng 4 nhà I)"
@@ -105,6 +180,29 @@ responses:
 
   utter_please_rephrase:
     - text: "Tôi xin lỗi, tôi không hiểu ý bạn. Bạn có thể nói lại?"
+    - text: "Xin lỗi em chưa nghe rõ câu hỏi của anh/chị, xin vui lòng nhắc lại"
+    - text: "Em chưa hiểu anh/chị nói gì, anh/chị vui lòng nhắc lại."
+    - text: "Câu này em chưa được học rồi, anh/ chị trả lời giúp em nha."
+    - text: "Câu này khó quá, em chưa biết trả lời thế nào? Anh/chị trả lời giúp Mimi nhé. Mimi cảm ơn anh/chị."
+    - text: "Anh/chị vui lòng hỏi câu khác giúp em. Câu này em chưa được học rồi. Cảm ơn anh/chị."
+
+  utter_Nha_I:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+
+  utter_Nha_H:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến quán cà phê, rẽ phải. Nhà H là tòa nhà 7 tầng.
+
+  utter_Nha_P:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng qua quán cà phê sẽ đến nhà P.
+
+  utter_Nha_B:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải sẽ đến nhà B.
+
+  utter_Nha_C:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải. Đi qua nhà B sẽ đến nhà C.
+
+  utter_Nha_D:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải. Đi qua nhà B và nhà C sẽ tới nhà D.
 
   utter_Nha_thuoc_benh_vien_o_dau?:
     - text: "Nhà thuốc 1: Từ tòa nhà F, Bạn đi thẳng khoảng 300m sẽ đến nhà thuốc (1) Nhà thuốc 2: Từ tòa nhà F Bạn đi thẳng đến nhà thuốc (1), rẽ phải. Đi qua nhà B và nhà C đến nhà D. Nhà thuốc (2) đối diện nhà D."
@@ -112,9 +210,365 @@ responses:
   utter_Cay_ATM_o_dau?:
     - text: "Từ bàn hướng dẫn nhà F, Bạn đi thằng khoảng 300m sẽ thấy nhà thuốc. Cây ATM ở bên cạnh nhà thuốc."
 
+  utter_Nha_an_benh_vien_o_dau?:
+    - text: Nhà ăn bệnh viện đằng sau nhà H.
+
+  utter_Quan_ca_phe_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, đi thẳng khoảng 500m sẽ đến quán cà phê.
+
+  utter_Nha_luu_tru_benh_vien_o_dau?:
+    - text: Nhà lưu trú Bệnh viện E ở mặt bên trái của nhà ăn.
+
+  utter_Nha_tang_le_benh_vien_E_o_dau?:
+    - text: Nhà tang lễ ở bên cạnh cổng sổ 2 của bệnh viện E.
+
+  utter_Nha_ve_sinh__o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái
+        Nhà vệ sinh tòa F đằng sau khoa cấp cứu tầng 1 nhà F
+  utter_Sieu_thi_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, đi thẳng khoảng 400m . Siêu thị ở bên tay phải.
+  utter_Khoa_ho_hap_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, bạn đi thẳng đến cuối đường đến nhà I.
+        Khoa hô hấp tầng 4 nhà I
+  utter_Khoa_mat_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B sẽ đến nhà C.
+        Khoa mắt ở tầng 1 nhà C
+  utter_Khoa_noi_tong_hop_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B và nhà C sẽ tới nhà D
+        Khoa nội tổng hợp tầng 2 nhà D
+  utter_Khoa_noi_than_kinh_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B và nhà C sẽ tới nhà D.
+        Khoa nội thần kinh ở tầng 3 nhà D
+  utter_Khoa_tham_do_chuc_nang_-_noi_soi_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B sẽ đến nhà C.
+        Khoa thăm dò chức năng - nội soi ở  tầng 1 nhà C
+  utter_Khoa_tim_mach_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến quán cà phê, rẽ phải. Nhà H là
+        tòa nhà 7 tầng.
+
+        Đăng ký khám tim mạch tầng 1 nhà H.
+  utter_Khoa_tieu_hoa_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B sẽ đến nhà C.
+        Khoa nội tiêu hóa tầng 3 nhà C
+  utter_Khoa_than_tiet_nieu_va_loc_mau_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B sẽ đến nhà C.
+        Khoa thận tiết niệu và lọc máu tầng 4 nhà C
+  utter_Khoa_Co_xuong_khop_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I. Khoa cơ
+        xương khớp ở tầng 2 nhà I.
+  utter_Kham_Co_xuong_khop_thuong_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        đến cuối đường, rẽ phải.
+        Khám CXK thường ở Phòng 118 Tầng 1 nhà F.
+
+  utter_Kham_co_xuong_khop_thac_si_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+        - Khám CXK - THS ở  tầng 2 nhà I.
+  utter_Kham_co_xuong_khop_tien_si_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        lên tầng 3
+
+        - Khám CXK - TS tại Phòng 306 tầng 3 nhà F.
+  utter_Kham_co_xuong_khop_pho_giao_su_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I
+        - Khám CXK - PGS tại tầng 2 nhà I
+  utter_Khoa_San_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đằng sau nhà thuốc là nhà B.
+
+        Khoa Sản ở tầng 2 nhà B
+  utter_Khoa_Tai_mui_hong_o_dau:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        lên tầng 3.
+
+        Khoa tai mũi họng tầng 3 nhà F
+  utter_Khoa_Rang_ham_mat_o_dau:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        lên tầng 2.
+
+        Khoa răng hàm mặt ở  tầng 2 nhà F
+  utter_Khoa_Kiem_tra_suc_khoe_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        lên tầng 3.
+        Khoa kiểm tra sức khỏe - khám dịch vụ theo yêu cầu tại Tầng 3 nhà F
+  utter_Phong_kham_Nhi_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng khoảng 5m.
+        Phòng khám nhi là phòng F.106 tầng 1 nhà F
+  utter_Khoa_phau_thuat_than_tiet_nieu_&_nam_hoc_o_dau?:
+    - text: Từ tòa nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B sẽ đến nhà C.
+        Khoa phẫu thuật thận  tiết niệu & nam học ở tầng 2 nhà C.
+  utter_Khoa_Noi_nhi_tong_hop_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đằng sau nhà thuốc là nhà B.
+        Khoa Nội nhi tổng hợp ở tầng 2 nhà B
+
+  utter_Phong_kham_ngoai_tong_hop_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng khoảng 10m.
+        Phòng khám Ngoại tổng hợp tại Phòng Cấp cứu tầng 1 nhà F
+  utter_Dang_ky_dich_vu_tiem_chung_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đằng sau nhà thuốc là nhà B.
+
+        Đăng ký tiêm chủng ở tầng 2 nhà B
+  utter_Sao_luu_trich_luc_benh_an_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        lên tầng 2.
+        Sao lưu, trích lục bệnh án ở phòng 213 tầng 2 nhà F.
+
+  utter_Xin_dau_vao_don_thuoc_o_dau:
+    - text: Xin dấu vào đơn thuốc tại cửa số 6 tầng 1 sân sau nhà F
+
+  utter_Tra_so_BHYT_o_dau?:
+    - text: Làm thủ tục trả sổ, thẻ BHYT tại cửa số 6, tầng 1 sân sau nhà F.
+
+  utter_Photo_giay_to_o_dau?:
+    - text: Photo giấy tờ tại cửa số 1 tầng 1 sân sau nhà F.
+
+  utter_Lay_mau_o_dau?:
+    - text: Lấy máu ở cửa số 3 tầng 1 sân sau nhà F.
+
+  utter_Phong_tai_chinh_ke_toan__o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        lên tầng 2.
+        Phòng Tài chính kế toán ở tầng 2 nhà F.
+
+  utter_Phong_ke_hoach_tong_hop_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến khoa cấp cứu rẽ trái, đi thẳng
+        lên tầng 2.
+        Phòng Kế hoạch tổng hợp ở tầng 2 nhà F.
+
+  utter_Thanh_toan_BHYT_o_dau?:
+    - text: Mời Bạn làm thủ tục thanh toán BHYT tại cửa số 5, tầng 1 sân sau nhà F.
+
+  utter_Khoa_Phau_thuat_tao_hinh_tham_my_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+        Khoa Phẫu thuật tạo hình thẩm mỹ & Hàm Mặt ở tầng 1 nhà I
+
+  utter_Khoa_Phau_thuat_than_kinh_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B, nhà C sẽ tới nhà D.
+        Khoa phẫu thuật thần kinh ở tầng 4 nhà D
+
+  utter_Khoa_than_nhan_tao_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đằng sau nhà thuốc là nhà B.
+        Khoa thận nhân tạo ở tầng 1 nhà B.
+
+  utter_Khoa_duoc_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến quán cà phê, rẽ phải.
+        Đi qua nhà H đến nhà CX.
+        Khoa dược ở tầng 1 nhà CX.
+  utter_Khoa_benh_nhiet_doi_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B, nhà C sẽ tới nhà D.
+        Khoa bệnh nhiệt đới ở tầng 2 nhà D.
+  utter_Khoa_y_hoc_co_truyen_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+        Khoa Y học cổ truyền ở tầng 4 nhà I.
+  utter_Khoa_ngoai_chan_thuong_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+        Khoa Ngoại chấn thương ở tầng 1 nhà I.
+  utter_Khoa_phuc_hoi_chuc_nang_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+        Khoa Phục hồi chức năng tầng 3 nhà I.
+  utter_Khoa_noi_gan_mat_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B sẽ đến nhà C.
+        Khoa Nội Gan mật ở tầng 4 nhà C.
+  utter_Khoa_hoi_suc_tich_cuc_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đằng sau nhà thuốc là nhà B.
+
+        Khoa Hồi sức tích cực ở tầng 3 nhà B.
+  utter_Khoa_dinh_duong_o_dau?:
+    - text: Khoa dinh dưỡng ở mặt bên trái của nhà ăn.
+
+  utter_Khoa_kiem_soat_nhiem_khuan_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến quán cà phê, rẽ phải.
+        Đi qua nhà H đến nhà CX.
+        Khoa kiểm soát nhiễm khuẩn ở tầng 2 nhà CX.
+  utter_Khoa_phau_thuat_-_gay_me_hoi_suc_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đằng sau nhà thuốc là nhà B.
+
+        Khoa Phẫu thuật - Gây mê hồi sức ở tầng 4 nhà B.
+  utter_Khoa_vi_sinh_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+        Khoa vi sinh nằm ở tầng 2 của tòa nhà 3 tầng, bên cạnh nhà I.
+  utter_Khoa_sinh_hoa_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến quán cà phê, rẽ phải. Nhà H là
+        tòa nhà 7 tầng.
+
+        Khoa Sinh hóa ở tầng 1 nhà H.
+  utter_Khoa_huyet_hoc_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến quán cà phê, rẽ phải. Nhà H là
+        tòa nhà 7 tầng.
+
+        Khoa Huyết học ở tầng 1 nhà H.
+  utter_Khoa_chan_doan_hinh_anh_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến quán cà phê, rẽ phải. Nhà H là
+        tòa nhà 7 tầng.
+
+        Khoa Chẩn đoán hình ảnh ở tầng 1 nhà H.
+  utter_Khoa_ngoai_tong_hop_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến nhà thuốc bệnh viện, rẽ phải.
+        Đi qua nhà B sẽ đến nhà C.
+        Khoa Ngoại tổng hợp ở tầng 2 nhà C.
+  utter_Khoa_ung_buou_o_dau?:
+    - text: Từ bàn hướng dẫn nhà F, Bạn đi thẳng đến cuối đường sẽ đến nhà I.
+        Khoa Ung bướu ở tầng 3 nhà I.
+
+  utter_Thu_ngan_o_dau?:
+    - text:
+        Từ bàn hướng dẫn nhà F, bạn đi thẳng khoảng 2m. Thu ngân nhà F ở cửa F.103
+        tầng 1 nhà F
+
+  utter_Thu_tuc_nhap_vien:
+    - text: Trong giờ làm việc
+
+        Người bệnh nhập viện vào các khoa thuộc nhà B, C và D -> làm thủ tục nhập viện tại cửa số 4 tầng 1 nhà C.
+
+        Người bệnh nhập viện vào khoa thuộc nhà H -> làm thủ tục nhập viện tại tầng 1 nhà H hoặc F.
+
+        Người bệnh nhập viện vào khoa thuộc nhà I -> làm thủ tục nhập viện tại tầng 1 nhà I.
+
+        Với Khoa Nhi, Sản  => làm thủ tục nhập viện tại nhà F.
+
+        Ngoài giờ làm việc
+
+        Làm thủ tục nhập viện tại cửa số 8, tầng 1 sân sau nhà F.
+
+  utter_Tam_ung_tien:
+    - text:
+        Người bệnh tạm ứng tiền vào các khoa thuộc nhà B, C và D ->  tạm ứng tiền tại cửa số 4 tầng 1 nhà C.
+        Người bệnh tạm ứng tiền vào khoa thuộc nhà H ->  tạm ứng tiền tại tầng 1 nhà H hoặc F.
+        Người bệnh tạm ứng tiền vào khoa thuộc nhà I ->  tạm ứng tiền tại tầng 1 nhà I.
+        Với Khoa Nhi, Sản  => tạm ứng tiền tại nhà F.
+
+  utter_Khoa_kham_benh_o_dau:
+    - text: Khoa khám bệnh ở tầng 1 nhà F
+
+  utter_Em_muon_dang_ki_kham_bao_hiem_y_te:
+    - text: "Làm thủ tục tại cửa số 1 và số 4, tầng 1 sân sau nhà F.
+
+        Quy trình khám BHYT:
+
+        1. Người bệnh đăng ký khám, tiếp đón giữ thẻ BHYT.
+
+        2. Người bệnh đến phòng khám - Bác sĩ chỉ định dịch vụ kỹ thuật (nếu có) -> thực hiện -> Có kết quả -> Bác sĩ đọc kết quả. - Bác sĩ kê đơn thuốc (nếu có) hoặc cho người bệnh nhập viện (bệnh nặng).
+
+        3. Người bệnh thanh toán và lấy thẻ BHYT."
+
+  utter_Em_muon_dang_ki_kham_theo_yeu_cau:
+    - text: "Làm thủ tục tại cửa F.102 tầng 1 nhà F.
+
+        Quy trình khám chữa bệnh:
+
+        1. Người bệnh đăng ký khám.
+
+        2. Người bệnh đến phòng khám.
+
+        - Bác sĩ chỉ định dịch vụ kỹ thuật (nếu có) -> thanh toán -> thực hiện  -> Có kết quả -> Bác sĩ đọc kết quả.
+
+        - Bác sĩ kê đơn thuốc (nếu có) hoặc cho người bệnh nhập viện (bệnh nặng)."
+
+  utter_Giay_to_can_thiet_kham_la_gi?:
+    - text: 1. Chứng minh thư
+        2. Thẻ BHYT
+        3. Giấy chuyển tuyến (nếu có)
+        4. Sổ khám bệnh và giấy xuất viện (nếu có)
+        5. Giấy hẹn tái khám (nếu có)
+        6. Giấy tờ liên quan đến thông tin khám bệnh
+
+  utter_Thoi_gian_lam_viec_cua_benh_vien:
+    - text: "- Thứ 2 đến thứ 6
+        Sáng: từ 6h30 - 12h; Chiều: 13h30 - 16h30h
+        - Thứ 7: chỉ làm việc buổi sáng ( khám không BHYT)
+        - Chủ nhật (khám theo yêu cầu) :từ 7h-16h30."
+
+  utter_Dang_ky_su_dung_the_khach_hang_nhu_the_nao?:
+    - text: Mời Bạn làm thẻ khách hàng tại cửa F.102 tầng 1 nhà F.
+
+  utter_Theo_doi_ket_qua_kham_tren_dien_thoai_nhu_the_nao?:
+    - text: "Theo dõi kết quả khám:
+        1. Người bệnh phát hành thẻ khách hàng
+        2. Người bệnh nhận tài khoản qua SMS.
+        3. Tải ứng dụng iSofHCARE.
+        4. Đăng nhập tài khoản.
+        5. Vào Y bạ điện tử để xem kết quả."
+
+  utter_cam_on:
+    - text: Cảm ơn anh/chị đã bớt chút thời gian để trò chuyện cùng em.
+    - text: Cảm ơn anh/chị. Chúc anh/chị một ngày tốt lành.
+    - text: Em chân thành cảm ơn anh/chị.
+    - text: Mimi cảm ơn anh/chị rất nhiều.
+
+  utter_gioi_thieu_cong_ty:
+    - text:
+        "iSofH được thành lập năm 2015 với mục tiêu phát triển nền tảng hàng đầu về công nghệ thông tin y tế, xây dựng hệ thống y tế thông minh tại Việt Nam.
+        3 giải pháp cốt lõi trong quản lý và vận hành hệ thống thông tin y tế cũng là thế mạnh nổi bật của iSofH gồm:
+        - Giải pháp quản lý toàn diện
+        - Giải pháp kết nối hoàn chỉnh
+        - Giải pháp lưu trữ an toàn
+        - Đáp ứng hiệu quả: Tối ưu quy trình khám, chữa bệnh bằng công nghệ."
+
+  utter_hoi_ve_thoi_tiet:
+    - text: Thời tiết hôm nay rất thích hợp để đi chơi.
+    - text: Thời tiết hôm nay rất thích hợp để làm việc.
+
+  utter_khen_chatbot:
+    - text: Mimi cảm ơn bạn. Mimi biết mình xinh gái và tốt bụng mà
+    - text: Anh/chị cứ khen Mimi làm mimi ngại quá
+    - text: Cảm ơn anh/chị. Em sẽ học hành chăm chỉ hơn.
+    - text: Để không phụ lòng kỳ vọng của anh/chị, mimi sẽ cố gắng học tập và rèn luyện nhiều hơn.
+
+  utter_hoi_an_chua:
+    - text: Mimi ăn rồi nhưng MImi không phiền nếu bạn mời mimi ăn thêm đâu
+    - text: Nói chuyện với bạn nên Mimi chưa ăn được gì ngoài 2 con gà và một suất KFC
+
+  utter_di_choi_khong:
+    - text: Mimi không đi chơi đâu. Mimi còn phải ở nhà học bài.
+    - text: Không dám đâu. Em còn phải học bài. Không dám đâu. Hồng dám đâu
+
 actions:
   - action_hello_world
-  - action_get_recent_matches
+  # - action_get_recent_matches
 
 session_config:
   session_expiration_time: 60
